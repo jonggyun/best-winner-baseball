@@ -8,10 +8,12 @@ plugins:
 provider:
   name: aws
   runtime: nodejs8.10
+  stage: dev
+  region: ap-northeast-2
 
 functions:
-  hello:
-    handler: handler.hello
+  api:
+    handler: src/handler.hello
     events:
       - http:
           method: get
