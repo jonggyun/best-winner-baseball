@@ -4,8 +4,9 @@
   "description": "Serverless webpack example using Typescript",
   "main": "handler.js",
   "scripts": {
-    "start": "tsc && n node dist/app.js",
-    "start:dev": "tsc && nodemon --watch dist/ dist/app.js"
+    "build": "webpack --config webpack.config.js",
+    "start": "tsc && node dist/app.js",
+    "start:dev": "ts-node-dev --respawn ./src/app.ts"
   },
   "dependencies": {
     "@types/express": "^4.16.1",
@@ -15,6 +16,8 @@
     "morgan": "^1.9.1",
     "nodemon": "^1.18.11",
     "source-map-support": "^0.5.10",
+    "ts-node": "^8.1.0",
+    "ts-node-dev": "^1.0.0-pre.32",
     "tslint": "^5.16.0",
     "tslint-config-airbnb": "^5.11.1",
     "tslint-config-prettier": "^1.18.0"
@@ -25,7 +28,8 @@
     "serverless-webpack": "^5.2.0",
     "ts-loader": "^5.3.3",
     "typescript": "^3.2.4",
-    "webpack": "^4.29.0"
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.3.0"
   },
   "author": "The serverless webpack authors (https://github.com/elastic-coders/serverless-webpack)",
   "license": "MIT"

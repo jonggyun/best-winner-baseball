@@ -4,7 +4,7 @@ var express = require("express");
 var cookieParser = require('cookie-parser');
 var morgan = require('morgan');
 require('dotenv').config();
-// const indexRouter = require('./routes/index');
+var indexRouter = require('./routes/index');
 // const connect = require('./schemas'); // 스키마 연결
 var app = express();
 // connect(); // 몽고디비 연결.
@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 /** body-parser 역할 끝 */
 /** cookie-parser 쿠키 해석 */
 app.use(cookieParser(process.env.COOKIE_SECRET));
-// app.use('/', indexRouter);
+app.use('/', indexRouter);
 /**
  * 404처리 미들웨어
  * 라우터에서 요청이 처리 되지 않으면 이쪽으로 넘어옴.

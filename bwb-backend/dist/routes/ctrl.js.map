@@ -1,0 +1,1 @@
+{"version":3,"file":"ctrl.js","sourceRoot":"","sources":["../../src/routes/ctrl.ts"],"names":[],"mappings":"AAAA,OAAO,CAAC,OAAO,GAAG;IAChB,IAAI;QACF,OAAO,CAAC,GAAG,CAAC,yBAAyB,CAAC,CAAC;KACxC;IAAC,OAAO,CAAC,EAAE;QACV,OAAO,CAAC,GAAG,CAAC,OAAO,EAAE,CAAC,CAAC,CAAC;KACzB;AACH,CAAC,CAAC"}
