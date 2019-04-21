@@ -5,6 +5,8 @@
     "tslint-config-prettier"
   ],
   "jsRules": {},
-  "rules": {},
+  "rules": {
+    "no-unused-variable": true
+  },
   "rulesDirectory": []
 }
